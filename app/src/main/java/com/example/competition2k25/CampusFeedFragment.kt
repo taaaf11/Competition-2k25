@@ -33,7 +33,11 @@ class CampusFeedFragment : Fragment() {
         binding?.recyclerViewFeed?.layoutManager = LinearLayoutManager(context)
         binding?.recyclerViewFeed?.adapter = CampusFeedAdapter(
             listOf(
+                CampusFeed("Abdullah Attari", "We have won the techfest App!!!!", "Today", 1000000, 200),
                 CampusFeed("Altaaf", "We have won the techfest App!!!!", "Today", 1000000, 200),
+                CampusFeed("Fahad", "We have won the techfest App!!!!", "Today", 1000000, 200),
+
+                CampusFeed("Mohid", "We have won the techfest App!!!!", "Today", 1000000, 200),
             )
         )
     }
