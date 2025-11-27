@@ -57,6 +57,9 @@
         <action
             android:id="@+id/action_homeFragment_to_discussionThreadFragment"
             app:destination="@id/discussionThreadFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_campusFeedFragment"
+            app:destination="@id/campusFeedFragment" />
     </fragment>
 
     <!-- Admin Dashboard -->
@@ -173,5 +176,10 @@
         android:name="com.example.competition2k25.DiscussionThreadFragment"
         android:label="fragment_discussion_thread"
         tools:layout="@layout/fragment_discussion_thread" />
+    <fragment
+        android:id="@+id/campusFeedFragment"
+        android:name="com.example.competition2k25.CampusFeedFragment"
+        android:label="fragment_campus_feed"
+        tools:layout="@layout/fragment_campus_feed" />
 
 </navigation>

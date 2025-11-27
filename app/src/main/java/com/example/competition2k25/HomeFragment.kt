@@ -27,7 +27,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         val btnCampusFeed = view.findViewById<Button>(R.id.btnCampusFeed)
         btnCampusFeed.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_eventListFragment)
+            findNavController().navigate(R.id.action_homeFragment_to_campusFeedFragment)
         }
 
         val btnDiscThread = view.findViewById<Button>(R.id.btnDiscussionThread)
