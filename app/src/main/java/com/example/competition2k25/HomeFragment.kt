@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.findFragment
 import androidx.navigation.fragment.findNavController
 import com.example.competition2k25.R
 
@@ -32,6 +33,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val btnDiscThread = view.findViewById<Button>(R.id.btnDiscussionThread)
         btnDiscThread.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_discussionThreadFragment)
+        }
+
+        val btnEventList = view.findViewById<Button>(R.id.btnEventList)
+        btnEventList.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_eventListFragment)
         }
     }
 }

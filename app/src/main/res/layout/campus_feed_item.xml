@@ -1,0 +1,68 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <!-- Content of the post -->
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content goes here..."
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Time Posted -->
+        <TextView
+            android:id="@+id/tvTimePosted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time posted"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Likes -->
+        <TextView
+            android:id="@+id/tvLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Likes: 15"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Comments -->
+        <TextView
+            android:id="@+id/tvComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments: 5"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
