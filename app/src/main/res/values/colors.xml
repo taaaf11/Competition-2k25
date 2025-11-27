@@ -2,4 +2,28 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+        <!-- Primary Color -->
+        <color name="colorPrimary">#3F51B5</color> <!-- Example Blue -->
+
+        <!-- Primary Dark Color (used for the status bar) -->
+        <color name="colorPrimaryDark">#303F9F</color> <!-- Darker Blue -->
+
+        <!-- Accent Color (used for highlighting specific elements, buttons, etc.) -->
+        <color name="colorAccent">#FF4081</color> <!-- Example Pink -->
+
+        <!-- Background Color (general background of the app) -->
+        <color name="colorBackground">#FFFFFF</color> <!-- White -->
+
+        <!-- Text Color -->
+        <color name="textPrimaryColor">#212121</color> <!-- Dark Gray -->
+        <color name="textSecondaryColor">#757575</color> <!-- Light Gray -->
+
+        <!-- Button Color -->
+        <color name="buttonBackgroundColor">#FF4081</color> <!-- Pink -->
+
+        <!-- Other colors for specific components -->
+        <color name="dividerColor">#BDBDBD</color> <!-- Light Gray for Dividers -->
+
 </resources>

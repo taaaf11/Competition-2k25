@@ -1,14 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
     tools:context=".DiscussionThreadFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Discussion Thread Title -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tvThreadTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discussion Thread"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
 
-</FrameLayout>
+    <!-- RecyclerView for Thread Posts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewThreadPosts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvThreadTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Reply EditText -->
+    <EditText
+        android:id="@+id/etReply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Write a reply"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewThreadPosts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+
+    <!-- Post Reply Button -->
+    <Button
+        android:id="@+id/btnPostReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Reply"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/etReply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:padding="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

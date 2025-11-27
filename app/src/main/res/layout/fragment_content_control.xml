@@ -1,14 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
     tools:context=".ContentControlFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Content Control Title -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tvContentControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content Control"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
 
-</FrameLayout>
+    <!-- Manage Posts Button -->
+    <Button
+        android:id="@+id/btnManagePosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Posts"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/tvContentControl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:padding="16dp" />
+
+    <!-- Manage Comments Button -->
+    <Button
+        android:id="@+id/btnManageComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Comments"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/btnManagePosts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
