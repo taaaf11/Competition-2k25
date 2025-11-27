@@ -26,7 +26,7 @@
         android:id="@+id/btnCampusFeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Profile"
+        android:text="Go to Campus Feed"
         app:layout_constraintTop_toBottomOf="@id/btnProfile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,11 +36,22 @@
         android:id="@+id/btnDiscussionThread"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to "
-        app:layout_constraintTop_toBottomOf="@id/btnProfile"
+        android:text="Go to discussion tread"
+        app:layout_constraintTop_toBottomOf="@id/btnCampusFeed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btnEventList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Event List"
+        app:layout_constraintTop_toBottomOf="@id/btnDiscussionThread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
 
     <!-- Button to Navigate to Profile -->
     <Button

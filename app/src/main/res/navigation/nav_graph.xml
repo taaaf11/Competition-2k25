@@ -54,6 +54,9 @@
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_discussionThreadFragment"
+            app:destination="@id/discussionThreadFragment" />
     </fragment>
 
     <!-- Admin Dashboard -->
@@ -165,5 +168,10 @@
             android:id="@+id/action_userManagementFragment_to_adminDashboardFragment"
             app:destination="@id/adminDashboardFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/discussionThreadFragment"
+        android:name="com.example.competition2k25.DiscussionThreadFragment"
+        android:label="fragment_discussion_thread"
+        tools:layout="@layout/fragment_discussion_thread" />
 
 </navigation>

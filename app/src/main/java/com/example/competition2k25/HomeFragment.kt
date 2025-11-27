@@ -23,5 +23,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             // Use Navigation Component to navigate to com.example.competition2k25.ProfileFragment
             findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
         }
+
+        val btnCampusFeed = view.findViewById<Button>(R.id.btnCampusFeed)
+        btnCampusFeed.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_eventListFragment)
+        }
+
+        val btnDiscThread = view.findViewById<Button>(R.id.btnDiscussionThread)
+        btnDiscThread.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_discussionThreadFragment)
+        }
     }
 }
