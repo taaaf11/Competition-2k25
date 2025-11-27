@@ -24,5 +24,9 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             // Optionally, navigate back to the Home or Login screen
             findNavController().navigate(R.id.action_profileFragment_to_homeFragment)
         }
+
+        view.findViewById<Button>(R.id.btnLogout).setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_homeFragment)
+        }
     }
 }
